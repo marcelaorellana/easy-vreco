@@ -112,11 +112,12 @@ var funcionError = function(error){
           return;
         }
         var me = this;
-           
+           var image = 'http://www.adktrailmap.com/webmap/images/biking.png';
         this.directionsService.route({
           origin: {'placeId': this.originPlaceId},
           destination: {'placeId': this.destinationPlaceId},
-          travelMode: this.travelMode
+          travelMode: this.travelMode,
+          
         }, function(response, status) {
           if (status === 'OK') {
             document.getElementById("ruta").addEventListener("click", function(){
