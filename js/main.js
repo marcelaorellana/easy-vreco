@@ -37,8 +37,8 @@ var funcionError = function(error){
 
         var map = new google.maps.Map(document.getElementById('map'), {
           mapTypeControl: false,
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13
+          center: {lat: -9.1191427, lng: -77.0349046},
+          zoom: 5
         });
 
         new AutocompleteDirectionsHandler(map);
